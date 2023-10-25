@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Fantasy Travel Blog</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- khai báo thư viện của javascript-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<style>
+						.miennam-menu {
+					position: relative;
+				}
+
+				.miennam-menu .dropdown-menu {
+					position: absolute;
+					top: 0;
+					left: 100%; /* Để menu hiển thị bên phải chữ MIỀN BẮC */
+					margin-left: 10px; /* Khoảng cách giữa chữ MIỀN BẮC và menu dropdown */
+					display: none;
+				}
+
+				.miennam-menu:hover .dropdown-menu {
+					display: block;
+				}
+				.home_banner_area {
+        width: 100%;
+        height: 100vh; /* Chiều cao full màn hình */
+        overflow: hidden;
+        position: relative;
+    }
+
+    .owl-carousel {
+        width: 100%;
+        height: 100%;
+    }
+	.owl-carousel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Thu nhỏ ảnh để vừa với kích thước phần tử chứa */
+        object-position: center; /* Căn giữa ảnh */
+    }
+	.imgnoibat wow fadeIn{ 
+         width: 100;
+		 height: 100;
+	}
+	.read_more {
+    color: #FF0000; /* Đổi màu chữ "Read More" thành màu đỏ (#FF0000) */
+    }
+
+     .blog-meta a {
+    color: #0000FF; /* Đổi màu ngày tháng và số lượng bình luận thành màu xanh (#0000FF) */
+     }
+	 .cat-left img {
+			width: 100%; /* Đặt chiều rộng hình ảnh theo kích thước của phần tử chứa */
+			height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
+			object-fit: cover; /* Hiển thị toàn bộ hình ảnh bên trong kích thước đã đặt */
+	 }
+	 .cat-right{
+		width: 100%; /* Đặt chiều rộng hình ảnh theo kích thước của phần tử chứa */
+			height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
+			object-fit: cover; 
+	 }
+	
+	
+	</style>
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html">
+						<img src="images/logo1.png" alt="" width="80" height="95">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-center mx-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">TRANG CHỦ</a>
+							</li>
+							    <li class="nav-item submenu dropdown active">
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+										 aria-expanded="false">ĐIỂM ĐẾN <i class="fa fa-caret-down"></i></a>
+								    <ul class="dropdown-menu">
+											<li class="nav-item">
+												<a class="nav-link" href="nhomdulich.html">MIỀN BẮC</a>
+											
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="single-blog.html">MIỀN TRUNG</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="single-blog.html">MIỀN NAM</a>
+											</li>
+									</ul>
+								</li>
+									
+						    </li>
+							<li class="nav-item">
+								<a class="nav-link" href="amthuc.html">ẨM THỰC</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="blog.html">BLOG</a>
+							</li>
+							<li class="nav-item submenu dropdown active">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">LỜI KHUYÊN KHI ĐI DU LỊCH <i class="fa fa-caret-down"></i></a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a class="nav-link" href="nhomdulich.html">Du lịch hội nhóm</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="single-blog.html">Du lịch một mình</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">LIÊN HỆ</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav ml-auto search">
+								<li class="nav-item d-flex align-items-center mr-10">
+									<div class="menu-form">
+										<form>
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Search here">
+											</div>
+										</form>
+									</div>
+									<button type="submit" class="search-icon">
+										<i class="lnr lnr-magnifier"></i>
+									</button>
+								</li>
+							</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ Header Menu Area =================-->
+
+	<!--================ Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="owl-carousel owl-theme" id="home-owl">
+			<div class="slide-item owl-lazy" data-src="images/halongslideshow1.jpg">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5"></div>
+						<div class="col-lg-7">
+							<div class="blog_text_slider">
+								<div class="blog_text">
+									<img class="img-fluid" src="img/banner/banner-img.png" alt="">
+									<div class="blog-meta bottom d-flex justify-content-between align-items-center flex-wrap">
+										<div class="meta">
+											<span class="icon fa fa-calendar"></span> July 14, 2023
+											<span class="icon fa fa-comments"></span> 05
+										</div>
+										<div>
+											<a class="read_more" href="#">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide-item owl-lazy" data-src="images/binhlieuslideshow2.jpg">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5"></div>
+						<div class="col-lg-7">
+							<div class="blog_text_slider">
+								<div class="blog_text">
+									<img class="img-fluid" src="img/banner/banner-img2.png" alt="">
+									<div class="blog-meta bottom d-flex justify-content-between align-items-center flex-wrap">
+										<div class="meta">
+											<span class="icon fa fa-calendar"></span> July 14, 2023
+											<span class="icon fa fa-comments"></span> 05
+										</div>
+										<div>
+											<a class="read_more" href="#">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide-item owl-lazy" data-src="images/Mocchauslideshow.jpg">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5"></div>
+						<div class="col-lg-7">
+							<div class="blog_text_slider">
+								<div class="blog_text">
+									<img class="img-fluid" src="img/banner/banner-img3.png" alt="">
+									<div class="blog-meta bottom d-flex justify-content-between align-items-center flex-wrap">
+										<div class="meta">
+											<span class="icon fa fa-calendar"></span> July 14, 2023
+											<span class="icon fa fa-comments"></span> 05
+										</div>
+										<div>
+											<a class="read_more" href="#">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		$(document).ready(function () {
+			$("#home-owl").owlCarousel({
+				items: 1, // Số lượng ảnh hiển thị  cùng một lúc
+				loop: true, // Lặp vô hạn
+				autoplay: true, // Tự động trình chiếu
+				autoplayTimeout: 3000, // Thời gian mỗi ảnh hiển thị (3 giây)
+				smartSpeed: 1000, // Tốc độ chuyển đổi
+				dots: false, // Ẩn nút chuyển đổi
+				nav: false, // Ẩn nút điều hướng
+			});
+		});
+		</script>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Travel Category Area =================-->
+		
+	<section class="travel_category">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title">
+						<h1>CÁC ĐỊA ĐIỂM DU LỊCH NỔI BẬT</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row owl-carousel" id="travel_cat" data-autoplay="true" data-autoplay-speed="1500">
+				<div class="imgnoibat wow fadeIn" data-wow-duration="1s">
+					<figure>
+						<img class="img-fluid" src="images/halong.jpg" alt="">
+					</figure>
+					<div class="overlay"></div>
+					<div class="text-wrap">
+						<h3>
+							<a href="#">Hạ Long</a>
+						</h3>
+						<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
+							<div class="meta">
+								<a href="#">
+									<span class="icon fa fa-calendar"></span> July 20, 2023
+									<span class="icon fa fa-comments"></span> 200
+								</a>
+							</div>
+							<div>
+								<a class="read_more" href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="imgnoibat wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+					<figure>
+						<img class="img-fluid" src="images/dulichmocchau.jpg" alt="">
+					</figure>
+					<div class="overlay"></div>
+					<div class="text-wrap">
+						<h3>
+							<a href="#">Mộc Châu</a>
+						</h3>
+						<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
+							<div class="meta">
+								<a href="#">
+									<span class="icon fa fa-calendar"></span> April 26, 2023
+									<span class="icon fa fa-comments"></span> 345
+								</a>
+							</div>
+							<div>
+								<a class="read_more" href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="imgnoibat wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+					<figure>
+						<img class="img-fluid" src="images/colaubl.jpg" alt="">
+					</figure>
+					<div class="overlay"></div>
+					<div class="text-wrap">
+						<h3>
+							<a href="#">Bình Liêu</a>
+						</h3>
+						<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
+							<div class="meta">
+								<a href="#">
+									<span class="icon fa fa-calendar"></span> October 18, 2023
+									<span class="icon fa fa-comments"></span> 219
+								</a>
+							</div>
+							<div>
+								<a class="read_more" href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="imgnoibat wow fadeIn" data-wow-duration="1s" data-wow-delay=".9s">
+					<figure>
+						<img class="img-fluid" src="images/dulichue.jpg" alt="">
+					</figure>
+					<div class="overlay"></div>
+					<div class="text-wrap">
+						<h3>
+							<a href="#">Du lịch Huế</a>
+						</h3>
+						<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
+							<div class="meta">
+								<a href="#">
+									<span class="icon fa fa-calendar"></span> March 14, 2023
+									<span class="icon fa fa-comments"></span> 400
+								</a>
+							</div>
+							<div>
+								<a class="read_more" href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="imgnoibat wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+					<figure>
+						<img class="img-fluid" src="images/dalat.jpg" alt="">
+					</figure>
+					<div class="overlay"></div>
+					<div class="text-wrap">
+						<h3>
+							<a href="#">Du lịch Đà Lạt</a>
+						</h3>
+						<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
+							<div class="meta">
+								<a href="#">
+									<span class="icon fa fa-calendar"></span> June 15, 2018
+									<span class="icon fa fa-comments"></span> 216
+								</a>
+							</div>
+							<div>
+								<a class="read_more" href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="imgnoibat wow fadeIn" data-wow-duration="1s" data-wow-delay=".9s">
+					<figure>
+						<img class="img-fluid" src="images/sapachu.jpg" alt="">
+					</figure>
+					<div class="overlay"></div>
+					<div class="text-wrap">
+						<h3>
+							<a href="#">Du lịch Sapa</a>
+						</h3>
+						<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
+							<div class="meta">
+								<a href="#">
+									<span class="icon fa fa-calendar"></span> September 10, 2023
+									<span class="icon fa fa-comments"></span> 190
+								</a>
+							</div>
+							<div>
+								<a class="read_more" href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="imgnoibat wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+					<figure>
+						<img class="img-fluid" src="images/dulichdanang.jpg" alt="">
+					</figure>
+					<div class="overlay"></div>
+					<div class="text-wrap">
+						<h3>
+							<a href="#">Du lịch Đà Nẵng</a>
+						</h3>
+						<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
+							<div class="meta">
+								<a href="#">
+									<span class="icon fa fa-calendar"></span> March 01, 2023
+									<span class="icon fa fa-comments"></span> 275
+								</a>
+							</div>
+							<div>
+								<a class="read_more" href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="imgnoibat wow fadeIn" data-wow-duration="1s" data-wow-delay=".9s">
+					<figure>
+						<img class="img-fluid" src="images/nhoquehagiang.jpg" alt="">
+					</figure>
+					<div class="overlay"></div>
+					<div class="text-wrap">
+						<h3>
+							<a href="#">Du lịch Hà Giang</a>
+						</h3>
+						<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
+							<div class="meta">
+								<a href="#">
+									<span class="icon fa fa-calendar"></span> March 24, 2023
+									<span class="icon fa fa-comments"></span> 305
+								</a>
+							</div>
+							<div>
+								<a class="read_more" href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Travel Category Area =================-->
+
+	<!--================ Places Area =================-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="elementor-widget-wrap">
+					<div class="elementor-widget">
+						<div class="penci-fancy-heading penci-heading-text-center">
+							<div class="penci-fancy-heading-inner">
+								<h3 class="penci-heading-title"><a href="https://dulich3mien.vn/cam-nang/du-lich-mien-bac-viet-nam/">DU LỊCH MIỀN BẮC</a></h3>
+								<div class="penci-heading-content entry-content">
+									<p>Miền Bắc nổi bật hẳn với 4 mùa Xuân - Hạ - Thu - Đông rõ rệt, thu hút với những điểm đến du lịch đầy lý tưởng</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<section class="container section">
+		<div class="row">
+			<div class="col-12">
+				<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-widget elementor-widget-spacer">
+						<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+								<div class="elementor-spacer-inner"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- thêm bài viết cho du lịch miền bắc-->
+<section class="container penci-section penci-disSticky penci-structure-10">
+    <div class="row">
+        <div class="col-12">
+            <div class="elementor-widget-wrap">
+                <div id="pencifeatured_cat_69037" class="penci-featured-cat-sc">
+                    <section class="home-featured-cat mag-cat-style-1">
+                        <div class="home-featured-cat-content style-1">
+                            <div class="cat-left">
+                                <div class="mag-post-box hentry first-post">
+                                    <div class="magcat-thumb">
+                                        <a class="penci-image-holder penci-lazy" href="#" title="Hạ Long- điểm du lịch lí tưởng" style="background-image: url('images/halong.jpg');"></a>
+                                    </div>
+                                    <div class="magcat-detail">
+                                        <div class="mag-header">
+                                            <h3 class="magcat-titlte entry-title"><a href="#">Hạ Long- điểm du lịch lí tưởng</a></h3>
+                                            <div class="grid-post-box-meta mag-meta">
+                                                <span class="featc-author author-italic author vcard">Tác giả: <a class="url fn n" href="#">Nhóm 1 - k7c</a></span>
+                                                <span class="featc-date"><time class="entry-date published" datetime="2023-04-29T11:01:42+00:00">29 Tháng Tư, 2023</time></span>
+                                                <span>887 lượt xem</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat-right">
+								<div class="mag-post-box hentry">
+									<div class="magcat-thumb">
+										<a class="penci-image-holder penci-lazy small-fix-size" href="#" title="Bình Liêu- đến là yêu" style="background-image: url('images/binhlieuqn.jpg');"></a>
+									</div>
+									<div class="magcat-detail">
+										<h3 class="magcat-titlte entry-title"><a href="#">Bình Liêu- đến là yêu</a></h3>
+										<div class="grid-post-box-meta mag-meta">
+											<!-- Thông tin về bài viết 1 -->
+										</div>
+									</div>
+								</div>
+                                <!-- ... (tương tự cho các bài viết tiếp theo) ... -->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+	</div>
+   
+
+	
+	
+	<section class="different_places">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title">
+						<h1>Let Us Find Your Places Within a Sec.</h1>
+						<p>
+							There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s
+							exciting to think
+							about setting up your own viewing station.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="single_place wow fadeIn text-center mt-480" data-wow-duration="1s">
+						<img class="img-fluid w-100" src="img/places/p1.jpg" alt="">
+						<div class="overlay"></div>
+						<h4>Waterfall
+							<br> Mountain Island</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_place wow fadeIn text-center mt-240" data-wow-duration="1s" data-wow-delay=".2s">
+						<img class="img-fluid w-100" src="img/places/p2.jpg" alt="">
+						<div class="overlay"></div>
+						<h4>Waterfall
+							<br> Mountain Island</h4>
+					</div>
+					<div class="single_place wow fadeIn text-center" data-wow-duration="1s" data-wow-delay="1s">
+						<img class="img-fluid w-100" src="img/places/p3.jpg" alt="">
+						<div class="overlay"></div>
+						<h4>Waterfall
+							<br> Mountain Island</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_place wow fadeIn text-center" data-wow-duration="1s" data-wow-delay=".4s">
+						<img class="img-fluid w-100" src="img/places/p4.jpg" alt="">
+						<div class="overlay"></div>
+						<h4>Waterfall
+							<br> Mountain Island</h4>
+					</div>
+					<div class="single_place wow fadeIn text-center" data-wow-duration="1s" data-wow-delay=".8s">
+						<img class="img-fluid w-100" src="img/places/p5.jpg" alt="">
+						<div class="overlay"></div>
+						<h4>Waterfall
+							<br> Mountain Island</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_place wow fadeIn text-center mt-240" data-wow-duration="1s" data-wow-delay=".6s">
+						<img class="img-fluid w-100" src="img/places/p6.jpg" alt="">
+						<div class="overlay"></div>
+						<h4>Waterfall
+							<br> Mountain Island</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Places Area =================-->
+
+	<!--================ Popular Post Area =================-->
+	<section class="popular_post">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title">
+						<h1>Popular <br> Posts to Remember</h1>
+						<p>
+							There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s
+							exciting to think
+							about setting up your own viewing station.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-popular-post d-flex align-items-center flex-row">
+						<div class="icon">
+							<img src="img/popular-post/p1.jpg" alt="">
+						</div>
+						<div class="desc">
+							<h4>
+								<a href="#">Waterfall Mountain Visit</a>
+							</h4>
+							<div class="blog-meta d-flex justify-content-between align-items-center flex-wrap">
+								<div class="meta">
+									<a href="#">
+										<span class="icon fa fa-calendar"></span> March 14, 2018
+										<span class="icon fa fa-comments"></span> 05
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-popular-post d-flex align-items-center flex-row">
+						<div class="icon">
+							<img src="img/popular-post/p2.jpg" alt="">
+						</div>
+						<div class="desc">
+							<h4>
+								<a href="#">Waterfall Mountain Visit</a>
+							</h4>
+							<div class="blog-meta d-flex justify-content-between align-items-center flex-wrap">
+								<div class="meta">
+									<a href="#">
+										<span class="icon fa fa-calendar"></span> March 14, 2018
+										<span class="icon fa fa-comments"></span> 05
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-popular-post d-flex align-items-center flex-row">
+						<div class="icon">
+							<img src="img/popular-post/p3.jpg" alt="">
+						</div>
+						<div class="desc">
+							<h4>
+								<a href="#">Waterfall Mountain Visit</a>
+							</h4>
+							<div class="blog-meta d-flex justify-content-between align-items-center flex-wrap">
+								<div class="meta">
+									<a href="#">
+										<span class="icon fa fa-calendar"></span> March 14, 2018
+										<span class="icon fa fa-comments"></span> 05
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-popular-post d-flex align-items-center flex-row">
+						<div class="icon">
+							<img src="img/popular-post/p4.jpg" alt="">
+						</div>
+						<div class="desc">
+							<h4>
+								<a href="#">Waterfall Mountain Visit</a>
+							</h4>
+							<div class="blog-meta d-flex justify-content-between align-items-center flex-wrap">
+								<div class="meta">
+									<a href="#">
+										<span class="icon fa fa-calendar"></span> March 14, 2018
+										<span class="icon fa fa-comments"></span> 05
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-popular-post d-flex align-items-center flex-row">
+						<div class="icon">
+							<img src="img/popular-post/p5.jpg" alt="">
+						</div>
+						<div class="desc">
+							<h4>
+								<a href="#">Waterfall Mountain Visit</a>
+							</h4>
+							<div class="blog-meta d-flex justify-content-between align-items-center flex-wrap">
+								<div class="meta">
+									<a href="#">
+										<span class="icon fa fa-calendar"></span> March 14, 2018
+										<span class="icon fa fa-comments"></span> 05
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-popular-post d-flex align-items-center flex-row">
+						<div class="icon">
+							<img src="img/popular-post/p6.jpg" alt="">
+						</div>
+						<div class="desc">
+							<h4>
+								<a href="#">Waterfall Mountain Visit</a>
+							</h4>
+							<div class="blog-meta d-flex justify-content-between align-items-center flex-wrap">
+								<div class="meta">
+									<a href="#">
+										<span class="icon fa fa-calendar"></span> March 14, 2018
+										<span class="icon fa fa-comments"></span> 05
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-popular-post d-flex align-items-center flex-row">
+						<div class="icon">
+							<img src="img/popular-post/p7.jpg" alt="">
+						</div>
+						<div class="desc">
+							<h4>
+								<a href="#">Waterfall Mountain Visit</a>
+							</h4>
+							<div class="blog-meta d-flex justify-content-between align-items-center flex-wrap">
+								<div class="meta">
+									<a href="#">
+										<span class="icon fa fa-calendar"></span> March 14, 2018
+										<span class="icon fa fa-comments"></span> 05
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-popular-post d-flex align-items-center flex-row">
+						<div class="icon">
+							<img src="img/popular-post/p8.jpg" alt="">
+						</div>
+						<div class="desc">
+							<h4>
+								<a href="#">Waterfall Mountain Visit</a>
+							</h4>
+							<div class="blog-meta d-flex justify-content-between align-items-center flex-wrap">
+								<div class="meta">
+									<a href="#">
+										<span class="icon fa fa-calendar"></span> March 14, 2018
+										<span class="icon fa fa-comments"></span> 05
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-popular-post d-flex align-items-center flex-row">
+						<div class="icon">
+							<img src="img/popular-post/p9.jpg" alt="">
+						</div>
+						<div class="desc">
+							<h4>
+								<a href="#">Waterfall Mountain Visit</a>
+							</h4>
+							<div class="blog-meta d-flex justify-content-between align-items-center flex-wrap">
+								<div class="meta">
+									<a href="#">
+										<span class="icon fa fa-calendar"></span> March 14, 2018
+										<span class="icon fa fa-comments"></span> 05
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Popular Post Area =================-->
+
+	<!--================ start footer Area  =================-->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="single-footer-widget footer_middle">
+				<img src="images/footer_logo.png" alt="" width="200" height="170">
+				<p class="mt-50">Stay updated with our latest trends</p>
+				<p class=" thongtin">Họ và tên: </p>Bàn Anh Dũng <br> Lục Thị Mộc <br> Khiếu Xuân Bách
+				<p class="thongtin">Lớp: </p>Khoa học máy tính K7C
+			</div>
+			</div>
+			<div class="footer-bottom footer_copy">
+				<div class="footer-social">
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</div>
+				<p class="col-lg-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright &copy;
+				<script>document.write(new Date().getFullYear());
+				</script> WE ARE ONE | BẢN QUYỀN THUỘC VỀ NHÓM 1
+				<i class="fa fa-heart-o" aria-hidden="true"></i>
+			
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!--================ End footer Area  =================-->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<div id="back-top">
+		<a title="Go to Top" href="#">
+			<i class="fa fa-angle-up"></i>
+		</a>
+	</div>
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="vendors/jquery-ui/jquery-ui.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>
